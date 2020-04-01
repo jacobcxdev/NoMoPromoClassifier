@@ -11,7 +11,7 @@ import SwiftUI
 struct ClassifierView: View {
     @ObservedObject var classifier: Classifier
     @State private var showAlert = false
-    @State private var alert = Alert.init(title: Text("Alert")) {
+    @State private var alert = Alert(title: Text("Alert")) {
         didSet {
             showAlert = true
         }
